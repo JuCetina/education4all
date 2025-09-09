@@ -4,39 +4,39 @@
     box-sizing: border-box;
 }
 
-html{
+html {
     font-family: "Lato", sans-serif;
 }
 
-.header{
+.header {
     width: 100%;
     background-color: #004ea7;
     display: flex;
     justify-content: space-between;
 }
 
-.logo-container{
+.logo-container {
     margin: 15px 25px;
 }
 
-.logo{
+.logo {
     width: 100px;
 }
 
-.menu_list{
+.menu_list {
     list-style-type: none;
     display: flex;
     align-items: center;
     height: 100%;
 }
 
-.menu_item-container{
+.menu_item-container {
     display: inline-block;
     margin: 0 15px;
     cursor: pointer;
 }
 
-.menu_item{
+.menu_item {
     display: inline-block;
     padding: 15px 20px;
     color: white;
@@ -45,11 +45,11 @@ html{
     border-radius: 5px;
 }
 
-.menu_item:hover{
+.menu_item:hover {
     background-color: #2058a1;
 }
 
-.tuition{
+.tuition {
     width: 100%;
     display: flex;
     background-image: url(../assets/students.jpg);
@@ -59,7 +59,7 @@ html{
     z-index: 1;
 }
 
-.tuition_filter{
+.tuition_filter {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -71,19 +71,19 @@ html{
     z-index: 2;
 }
 
-.tuition_container-left{
+.tuition_container-left {
     width: 50%;
     display: flex;
     flex-wrap: wrap;
 }
 
-.tuition_text-container{
+.tuition_text-container {
     width: 85%;
     z-index: 3;
     margin: 26px 0 0 69px;
 }
 
-.tuition_text_left{
+.tuition_text_left {
     width: 100%;
     font-size: 52px;
     font-weight: 700;
@@ -93,7 +93,7 @@ html{
     margin-top: 90px;
 }
 
-.tuition_button-container{
+.tuition_button-container {
     width: 100%;
     height: 68px;
     display: flex;
@@ -101,7 +101,7 @@ html{
     z-index: 4;
 }
 
-.tuition_button{
+.tuition_button {
     font-size: 24px;
     font-weight: 700;
     color: white;
@@ -114,19 +114,19 @@ html{
     border-bottom: 4px solid #771a1a;
 }
 
-.tuition_container-right{
+.tuition_container-right {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.tuition_logo{
-    width: 530px;
+.tuition_logo {
+    width: 453px;
     margin: 30px 0 0;
     z-index: 5;
 }
 
-.tuition_text_right{
+.tuition_text_right {
     width: 500px;
     font-size: 28px;
     font-weight: 700;
@@ -137,7 +137,7 @@ html{
     z-index: 6;
 }
 
-.contact_container{
+.contact_container {
     width: 100%;
     height: 400px;
     display: flex;
@@ -150,7 +150,7 @@ html{
     z-index: 1;
 }
 
-.container_filter{
+.container_filter {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -162,7 +162,7 @@ html{
     z-index: 2;
 }
 
-.contact_title{
+.contact_title {
     font-size: 60px;
     font-weight: 700;
     color: white;
@@ -171,7 +171,7 @@ html{
     z-index: 3;
 }
 
-.contact_numbers{
+.contact_numbers {
     font-size: 50px;
     font-weight: 700;
     color: white;
@@ -180,7 +180,7 @@ html{
     z-index: 4;
 }
 
-.footer{
+.footer {
     width: 100%;
     height: 150px;
     background-color: #004ea7;
@@ -189,7 +189,7 @@ html{
     align-items: center;
 }
 
-.footer_text{
+.footer_text {
     color: white;
     font-size: 18px;
 }
@@ -209,7 +209,35 @@ html{
     }
 
     .tuition_logo {
-        width: 500px;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .tuition_text_left {
+        font-size: 35px;
+    }
+
+    .contact_title {
+        font-size: 55px;
+    }
+
+    .contact_numbers {
+        font-size: 53px;
+    }
+}
+
+@media screen and (max-width: 849px) {
+    .tuition_logo {
+        width: 372px;
+    }
+
+    .tuition_text_right {
+        font-size: 25px;
+    }
+
+    .tuition_text_left {
+        font-size: 30px;
     }
 }
 
@@ -224,6 +252,7 @@ html{
 
     .tuition {
         flex-wrap: wrap;
+        background-image: url(../assets/banner.jpg);
     }
 
     .tuition_container-left {
@@ -237,9 +266,62 @@ html{
     .tuition_button-container {
         margin: 40px 0;
     }
-
-    .tuition {
-        background-image: url(../assets/banner.jpg);
-    }
 }
 
+@media screen and (max-width: 480px) {
+    .menu_list {
+        display: none;
+    }
+
+    .tuition_text-container {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .tuition_text_left {
+        width: 70%;
+        font-size: 34px;
+    }
+
+    .tuition_button-container {
+        height: 56px;
+    }
+
+    .tuition_button {
+        font-size: 18px;
+    }
+
+    .tuition_text_right {
+        font-size: 18px;
+        margin: 0px 0 45px 0;
+        width: 300px;
+    }
+
+    .tuition_logo {
+        width: 315px;
+        margin-bottom: 33px;
+    }
+
+    .contact_container {
+        flex-wrap: wrap;
+        height: 220px;
+    }
+
+    .contact_title {
+        width: 100vw;
+        text-align: center;
+        font-size: 38px;
+        margin: 20px 0;
+        padding-right: 0px;
+    }
+
+    .contact_numbers {
+        font-size: 33px;
+        margin: 0 0 30px;
+    }
+
+    .footer_text {
+        font-size: 14px;
+    }
+}
