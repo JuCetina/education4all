@@ -194,3 +194,52 @@ html{
     font-size: 18px;
 }
 
+@media screen and (max-width: 1280px) {
+    .menu_item {
+        text-align: center;
+    }
+
+    .tuition_text-container {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .tuition_container-right {
+        width: 50%;
+    }
+
+    .tuition_logo {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu_item-container {
+        margin: 0 10px;
+    }
+
+    .menu_item {
+        padding: 15px 15px;
+    }
+
+    .tuition {
+        flex-wrap: wrap;
+    }
+
+    .tuition_container-left {
+        width: 100%;
+    }
+
+    .tuition_container-right {
+        width: 100%;
+    }
+
+    .tuition_button-container {
+        margin: 40px 0;
+    }
+
+    .tuition {
+        background-image: url(../assets/banner.jpg);
+    }
+}
+
