@@ -49,6 +49,10 @@ html {
     background-color: #2058a1;
 }
 
+.menu_mov {
+    display: none;
+}
+
 .tuition {
     width: 100%;
     display: flex;
@@ -271,6 +275,21 @@ html {
 @media screen and (max-width: 480px) {
     .menu_list {
         display: none;
+    }
+
+    .menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu_mov{
+        display: flex;
+        margin: 10px 20px 10px;
+        border: 1px solid white;
+        padding: 10px;
+        border-radius: 5px;
+
     }
 
     .tuition_text-container {
