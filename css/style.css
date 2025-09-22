@@ -268,6 +268,7 @@ background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 60%,
     width: 90%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin: 20px;
     padding: 20px;
     background-color: #100e42c7;
@@ -290,6 +291,7 @@ background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 60%,
     height: 270px;
     margin-right: 20px;
     align-self: center;
+    border-radius: 5px;
     z-index: 1;
 }
 
@@ -306,6 +308,21 @@ background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 60%,
     margin: 20px 0;
     color: white;
     font-size: 18px;
+    position: relative;
+    z-index: 1;
+}
+
+.course_button{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #c2201f;
+    border-bottom: 4px solid #771a1a;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 10px 0;
     position: relative;
     z-index: 1;
 }
@@ -343,6 +360,71 @@ background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 60%,
     right: 0;
     background-color: rgba(194, 32, 31, 0.3);
     z-index: 2;
+}
+
+.tecnicos{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tecnicos_title{
+    color: #020024;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.tecnicos_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 20px;
+}
+
+.tecnicos_arte{
+    position: relative;
+}
+
+.tecnicos_shape{
+    width: 200px;
+    height: 200px;
+    background-color: #004ea7;
+    border-radius: 88% 12% 89% 11% / 14% 84% 16% 86%;
+}
+.tecnicos_img {
+    width: 310px;
+    position: absolute;
+    top: 27px;
+    left: -14px;
+}
+
+.tecnicos_name{
+    color: #020024;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.tecnicos_button {
+    color: white;
+    font-size: 16px;
+    background-color: #004ea7;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 3px solid #01336b;
+    padding: 10px 15px;
+    margin-top: 10px;
+    font-weight: 700;
+    text-align: center;
+    width: 100px;
+    align-self: center;
+}
+
+.tecnicos_button:hover{
+    background-color: #527fb3;
 }
 
 .contact_title {
@@ -441,6 +523,10 @@ background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 60%,
 
     .contact_numbers {
         font-size: 53px;
+    }
+
+    .course_title{
+        margin-top: 30px;
     }
 }
 
