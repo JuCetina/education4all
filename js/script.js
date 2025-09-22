@@ -1,7 +1,7 @@
 const menuButton = document.querySelector(".menu_mov-button");
 const menuContainer = document.querySelector(".menu_mov-container");
 
-const mobileResolution = window.matchMedia("screen and (max-width: 480px)");
+const mobileResolution = window.matchMedia("screen and (max-width: 849px)");
 
 function showHide(){
     if(menuContainer.classList.contains("is-active")){
