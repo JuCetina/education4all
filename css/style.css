@@ -6,6 +6,7 @@
 
 html {
     font-family: "Lato", sans-serif;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -178,6 +179,7 @@ background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 60%,
     padding: 20px 25px;
     margin: 25px 10px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .glass-card {
@@ -225,6 +227,14 @@ background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 60%,
   );
 }
 
+.glass-card:hover {
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+        inset 0 0 60px 30px rgba(255, 255, 255, 0.3);
+}
+
 .custom-shape-divider-bottom-1758519258 {
     position: absolute;
     bottom: 0;
@@ -247,7 +257,69 @@ background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 60%,
     fill: #100E42;
 }
 
-.contact_container {
+.course{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.course_container{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 20px;
+    background-color: #100e42c7;
+    border-radius: 15px;
+    background-image: url(../assets/denim.webp);
+    position: relative;
+    overflow: hidden;
+}
+
+.course_filter{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #100c66ab;
+}
+
+.course_img{
+    height: 270px;
+    margin-right: 20px;
+    align-self: center;
+    z-index: 1;
+}
+
+.course_title{
+    font-weight: 700;
+    font-size: 35px;
+    color: white;
+    margin-bottom: 35px;
+    position: relative;
+    z-index: 1;
+}
+
+.course_text{
+    margin: 20px 0;
+    color: white;
+    font-size: 18px;
+    position: relative;
+    z-index: 1;
+}
+
+.course_text_em{
+    font-weight: 700;
+}
+
+.course_corp{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.contact_container{
     width: 100%;
     height: 400px;
     display: flex;
