@@ -149,7 +149,7 @@ body{
 .oferta{
     width: 100%;
     background: #020024;
-background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 60%, rgba(0, 212, 255, 1) 100%);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 60%, rgba(0, 212, 255, 1) 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -365,6 +365,13 @@ background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 60%,
 .tecnicos{
     width: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tecnicos_list{
+    width: 100%;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -374,6 +381,7 @@ background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 60%,
     font-size: 35px;
     font-weight: 700;
     text-align: center;
+    margin: 25px 0;
 }
 
 .tecnicos_card{
@@ -385,6 +393,7 @@ background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 60%,
 
 .tecnicos_arte{
     position: relative;
+    align-self: center;
 }
 
 .tecnicos_shape{
@@ -393,6 +402,57 @@ background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 60%,
     background-color: #004ea7;
     border-radius: 88% 12% 89% 11% / 14% 84% 16% 86%;
 }
+
+.tecnicos_shape_red{
+    background-color: #771a1a;
+}
+
+.tecnicos_shape_gray{
+    background-color: #6e6c89;
+}
+
+.tecnicos_shape_orange{
+    background-color: #db7b22;
+}
+
+.tecnicos_shape_green{
+    background-color: #51958b;
+}
+
+.tecnicos_shape_img{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.emp{
+    background-image: url(../assets/capacitacion.jpg);
+}
+
+.ing{
+    background-image: url(../assets/ing.jpg);
+}
+
+.aux{
+    background-image: url(../assets/paramedic.jpg);
+}
+
+.ofi{
+    background-image: url(../assets/ofimatica.jpg);
+}
+
+.cpu{
+    background-image: url(../assets/mantenimiento.jpg);
+}
+
+.redes{
+    background-image: url(../assets/redes.jpg);
+}
+
+.code{
+    background-image: url(../assets/code.jpg);
+}
+
 .tecnicos_img {
     width: 310px;
     position: absolute;
@@ -405,6 +465,8 @@ background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 60%,
     font-size: 18px;
     font-weight: 700;
     margin: 10px 0;
+    text-align: center;
+    width: 225px;
 }
 
 .tecnicos_button {
@@ -421,11 +483,33 @@ background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 60%,
     text-align: center;
     width: 100px;
     align-self: center;
+    margin-bottom: 20px;
+}
+
+.tecnicos_button_red{
+    background-color: #771a1a;
+}
+
+.tecnicos_button_gray{
+    background-color: #6e6c89;
+}
+
+.tecnicos_button_orange{
+    background-color: #db7b22;
+}
+
+.tecnicos_button_green{
+    background-color: #51958b;
 }
 
 .tecnicos_button:hover{
     background-color: #527fb3;
 }
+
+.cursos_shape{
+    border-radius: 6% 94% 7% 93% / 92% 7% 93% 8%;
+}
+
 
 .contact_title {
     font-size: 60px;
@@ -590,6 +674,10 @@ background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 60%,
 
     .tuition_text_left {
         font-size: 30px;
+    }
+
+    .course_img {
+        margin-right: 0;
     }
 }
 
