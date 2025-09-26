@@ -11,6 +11,14 @@ html {
 
 body{
     position: relative;
+    background-image: url(/assets/blanco.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .header {
@@ -58,13 +66,18 @@ body{
     display: none;
 }
 
+.menu_mov-container{
+    display: none;
+}
+
 .tuition {
     width: 100%;
     display: flex;
-    background-image: url(../assets/students.jpg);
+    background-image: url(../assets/students2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    background-position: center;
     z-index: 1;
 }
 
