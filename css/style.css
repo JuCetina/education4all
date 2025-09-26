@@ -697,6 +697,12 @@ body{
 }
 
 @media screen and (max-width: 849px) {
+    .header {
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+    
     .menu_list {
         display: none;
     }
@@ -727,6 +733,7 @@ body{
     }
 
     .menu_mov-container {
+        display: block;
         width: 70vw;
         position: fixed;
         background-color: #004ea7;
@@ -805,12 +812,6 @@ body{
 }
 
 @media screen and (max-width: 480px) {
-    .header {
-        position: sticky;
-        top: 0;
-        z-index: 2;
-    }
-
     .tuition_text-container {
         margin: 0;
         display: flex;
